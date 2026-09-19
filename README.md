@@ -1,8 +1,8 @@
 # Self-Balancing Robot
 
 A two-wheeled self-balancing robot built from scratch over 25 days, as a first
-real electronics project. ESP32-S3, a BNO055 IMU, stepper drivers, a PID loop,
-and two OLED screens for eyes.
+real electronics project. ESP32-S3, a BNO055 IMU, an H-bridge motor driver, a PID
+loop, and two OLED screens for eyes.
 
 I'm a high-school senior heading into electrical engineering, and before this
 project I had never soldered anything. This repo is the engineering record: what
@@ -33,7 +33,7 @@ the Markdown in `docs/` is the readable render of them.
 |---|---|
 | ESP32-S3-DevKitC-1 (N16R8) | Main controller |
 | BNO055 | 9-DOF IMU — pitch angle for the balance loop |
-| A4988 ×2 | Stepper drivers |
+| TB6612FNG | Dual H-bridge motor driver |
 | SSD1306 ×2 | OLED eyes |
 | LM2596 | Buck converter, battery → 5 V |
 

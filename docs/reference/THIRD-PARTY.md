@@ -50,4 +50,3 @@ libraries — each under its own license:
 |---|---|
 | `Adafruit_BNO055` + `Adafruit_Sensor` | IMU orientation |
 | `Adafruit_SSD1306` + `Adafruit_GFX` | OLED eyes |
-| `AccelStepper` | stepper motion profiles |

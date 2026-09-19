@@ -23,8 +23,8 @@ firmware/
   01-blink/            Day 1  — toolchain check
   02-gpio-basics/      Day 2  — external LED, PWM fade, millis()
   03-oled-eyes/        Day 3  — dual SSD1306 on two I2C buses
-  04-motor-single/     Day 4  — one stepper, A4988
-  05-motor-both/       Day 5  — coordinated drive
+  04-motor-single/     Day 4  — one DC motor, H-bridge + PWM
+  05-motor-both/       Day 5  — coordinated drive, turning
   07-imu/              Day 7  — BNO055 pitch/roll/yaw
   11-pid-balance/      Day 11 — first balance attempt
   ...
@@ -36,7 +36,7 @@ firmware/
 |---|---|
 | ESP32-S3-DevKitC-1 N16R8 | main controller |
 | BNO055 | 9-DOF IMU, I2C `0x28` |
-| A4988 ×2 | stepper drivers |
+| TB6612FNG | dual H-bridge motor driver |
 | SSD1306 ×2 | OLED eyes — **need separate I2C buses**, they share address `0x3C` |
 | LM2596 | buck converter, battery → 5 V rail |
 
