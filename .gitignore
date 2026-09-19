@@ -1,0 +1,36 @@
+# --- Third-party reference design (kept locally, not redistributed) ---
+# KiCad projects + Arduino sketches in this folder are the work of
+# H.M. Phan / Robonyx (2024) and carry no license permitting redistribution.
+# See docs/reference/THIRD-PARTY.md for details.
+Self_Balancing_Robot/
+
+# --- Raw video footage (too large for git; 150 MB+ per file) ---
+视频素材/
+*.mp4
+*.mov
+*.MP4
+*.MOV
+
+# --- Personal photos not intended for publication ---
+Photo on *.jpg
+
+# --- macOS ---
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Editor / tooling ---
+.claude/
+*.swp
+*~
+
+# --- Arduino / PlatformIO build output ---
+build/
+.pio/
+.vscode/
+*.elf
+*.bin.bak
+
+# Original high-res download (downscaled copy lives in docs/reference/)
+引脚定义图.jpg
